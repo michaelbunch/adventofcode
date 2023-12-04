@@ -38,6 +38,7 @@ func main() {
 			for i, word := range words {
 				if strings.Index(subString, word) == 0 {
 					number = number + strconv.Itoa(i)
+					continue
 				}
 			}
 		}
